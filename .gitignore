@@ -15,6 +15,7 @@ hs_err_pid*
 bin/
 
 # forge directories & files
+.gradle/
 build/
 eclipse/
 gradle/
