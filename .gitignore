@@ -1,0 +1,32 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# output directory
+bin/
+
+# forge directories & files
+build/
+eclipse/
+gradle/
+build.gradle
+CREDITS-fml.txt
+forge-1.7.10-10.13.0.1180-changelog.txt
+gradlew
+gradlew.bat
+LICENSE-fml.txt
+MinecraftForge-Credits.txt
+MinecraftForge-License.txt
+README.txt
+
+# runtime directory for game play
+run/
