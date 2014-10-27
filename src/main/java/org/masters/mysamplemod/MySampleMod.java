@@ -2,12 +2,15 @@ package org.masters.mysamplemod;
 
 
 import org.masters.mysamplemod.common.CommonProxy;
+import org.masters.mysamplemod.common.SampleBlock;
 
+import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = MySampleMod.MODID, version = MySampleMod.VERSION)
 public class MySampleMod
@@ -20,10 +23,13 @@ public class MySampleMod
     	    serverSide="org.masters.mysamplemod.common.CommonProxy")
     public static CommonProxy proxy;
     
+    private Block mySampleBlock;
+    
+    
     @EventHandler
     public void init(FMLInitializationEvent event)
-    {
-		// some example code
-        System.out.println("DIRT BLOCK >> "+Blocks.dirt.getUnlocalizedName());
+    {    	
+    	mySampleBlock = new SampleBlock();
+    	GameRegistry.registerBlock(mySampleBlock, SampleBlock.NAME);
     }
 }
