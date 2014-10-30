@@ -1,5 +1,7 @@
 package org.masters.mysamplemod.common;
 
+import org.masters.mysamplemod.MySampleMod;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -13,7 +15,7 @@ public class SampleBlock extends Block {
 
 		setBlockName(NAME);
 		setCreativeTab(CreativeTabs.tabBlock);
-		
+		setBlockTextureName(MySampleMod.MODID + ":" + NAME);
 	}
 
 }
